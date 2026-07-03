@@ -702,16 +702,138 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   .timeline-item.left .timeline-card { text-align: left; }
 }
 
-@media (max-width: 480px) {
-  /* On mobile, center timeline (no split) */
-  .timeline::before { left: 22px; transform: none; }
+@media (max-width: 640px) {
+  .stage {
+    padding: 18px 12px 90px;
+  }
+
+  .stage-content {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 8px;
+    gap: 18px;
+  }
+
+  #music-btn {
+    top: 12px;
+    right: 12px;
+    width: 42px;
+    height: 42px;
+    font-size: 1rem;
+  }
+
+  .btn-primary,
+  .btn-wish,
+  .btn-secondary {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .btn-primary {
+    padding: 14px 18px;
+  }
+
+  .btn-wish {
+    padding: 16px 18px;
+  }
+
+  .btn-secondary {
+    padding: 12px 18px;
+  }
+
+  .finale-actions {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .glass-card {
+    padding: 22px 18px;
+  }
+
+  .message-card {
+    min-height: auto;
+  }
+
+  .typewriter-text {
+    font-size: 1rem;
+  }
+
+  .compliment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline {
+    padding: 0 6px;
+  }
+
+  .timeline::before {
+    left: 20px;
+    width: 2px;
+  }
+
   .timeline-item,
   .timeline-item.left {
-    flex-direction: row;
-    transform: translateX(-20px);
+    flex-direction: column;
+    align-items: flex-start;
+    transform: none;
   }
-  .timeline-item.visible { transform: none; }
-  .timeline-card,
-  .timeline-item.left .timeline-card { text-align: left; }
-  .compliment-grid { grid-template-columns: 1fr 1fr; }
+
+  .timeline-item.left .timeline-card,
+  .timeline-item.right .timeline-card,
+  .timeline-card {
+    text-align: left;
+  }
+
+  .timeline-dot {
+    width: 38px;
+    height: 38px;
+    font-size: 1.1rem;
+  }
+
+  .section-sub {
+    font-size: .88rem;
+  }
+
+  .person-name {
+    font-size: clamp(3rem, 16vw, 5.5rem);
+  }
+
+  .date-line {
+    font-size: .95rem;
+  }
+
+  .hb-top {
+    font-size: clamp(2.6rem, 12vw, 4.2rem);
+  }
+
+  .finale-msg {
+    max-width: 100%;
+  }
+
+  .stage-dots {
+    bottom: 12px;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .compliment-card {
+    padding: 18px 14px;
+  }
+
+  .timeline::before {
+    left: 18px;
+  }
+
+  .timeline-card {
+    padding: 16px 14px;
+  }
+
+  .stage {
+    padding-bottom: 100px;
+  }
+
+  .stage-content {
+    gap: 16px;
+  }
 }
