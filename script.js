@@ -8,11 +8,11 @@
 ─────────────────────────────────────────────────────────────── */
 const CONFIG = {
   // Birthday person's name (also update in index.html where marked)
-  name: "Anika",
+  name: "Tamanna",
 
  // Typewriter message — each string becomes a line, typed out one by one
   message: [
-    "Dear Anika, ✨",
+    "Dear Tamanna, ✨",
     "",
     "We've only just started talking, but something about you ",
     "already feels different  special, in a way I didn't expect.",
@@ -23,7 +23,7 @@ const CONFIG = {
     "Not just someone who wished you well today, ",
     "but someone who walks beside you through many more. 🌸",
     "",
-    "Happy Birthday, Anika.",
+    "Happy Birthday, Tamanna.",
     "With hope, and with all my heart 💖"
   ].join("\n"),
 
